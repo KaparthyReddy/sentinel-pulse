@@ -3,10 +3,15 @@ __pycache__/
 *.py[cod]
 venv/
 
-# Data & Models (Large Files)
+# Data & Models (Keep large/sensitive files local)
 data/
 models/*.pth
-outputs/*.png
 
 # OS
 .DS_Store
+
+# Outputs
+outputs/*
+# EXCEPT for the specific validation plots we want on GitHub
+!outputs/plots/
+!outputs/plots/*.png
