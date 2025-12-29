@@ -1,0 +1,13 @@
+# Hyperparameters for Sentinel-Pulse
+training:
+  batch_size: 1          # Pix2Pix works best with a batch size of 1 (Instance Normalization)
+  epochs: 200
+  lr: 0.0002             # Standard Adam learning rate for GANs
+  beta1: 0.5             # Momentum term for Adam
+  beta2: 0.999
+  lambda_L1: 100         # Weight for L1 loss (Accuracy anchor)
+
+data:
+  input_nc: 3            # Input channels (RGB)
+  output_nc: 3           # Output channels (RGB)
+  img_size: 256          # Size of the processed patches

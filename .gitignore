@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+
+# Data & Models (Large Files)
+data/
+models/*.pth
+outputs/*.png
+
+# OS
+.DS_Store
